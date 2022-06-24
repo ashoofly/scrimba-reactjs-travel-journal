@@ -40,7 +40,7 @@ nav {
 }
 
 main {
-  padding: 50px 40px;
+  padding: 20px 40px;
   display: flex;
   flex-direction: column;
 }
@@ -48,6 +48,27 @@ main {
 .card {
   display: flex;
   padding: 20px;
+}
+
+.card-destination-pic {
+  width: 40%;
+  border-radius: 5px;
+  background-position: center;
+  background-size: cover;
+  margin-right: 20px;
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex-direction: column;
+  }
+  .card-destination-pic {
+    padding: 10px;
+    width: 100%;
+    height: 150px;
+    margin-right: 0;
+    margin-block: 20px;
+  }
 }
 
 .card-location-block {
@@ -82,13 +103,7 @@ main {
   color: #918E9B;
 }
 
-.card-destination-pic {
-  width: 30%;
-  border-radius: 5px;
-  background-position: center;
-  background-size: cover;
-  margin-right: 20px;
-}
+
 
 .card-title {
   font-style: normal;
